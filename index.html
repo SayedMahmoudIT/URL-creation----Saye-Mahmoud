@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./css/all.min.css"> <!-- fontAwesom -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body class="container py-5  bg-dark  overflow-hidden">
+  <h1>Sayed Project</h1>
+
+  <form action="#" id="SettingForm" class="border border-2 rounded-3 bg-dark w-50 m-auto">
+
+    <div class="container p-3">
+
+      <div class="mb-3 bg-light d-flex">
+        <div>
+          <span><i class="fa-solid fa-link fa-2x bg-dark-subtle p-1"></i></span>
+        </div>
+        <div class="bg-secondary w-100">
+          <input type="text" name="" id="LinkURLInput" class="form-control w-100 h-100 bg-transparent text-light"
+            placeholder="https://www.siteName.com/">
+        </div>
+      </div>
+
+      <div class="mb-3 bg-light d-flex">
+        <div>
+          <span><i class="fa-solid fa-pen fa-2x text bg-dark-subtle p-2"></i></span>
+        </div>
+        <div class="bg-secondary w-100">
+          <input type="text" name="" id="SiteNameInput" class="form-control w-100 h-100 bg-transparent text-light "
+            placeholder="Site Name">
+        </div>
+      </div>
+
+      <div class="mb-3 bg-secondary w-100">
+        <textarea style="resize: none;" class="form-control w-100 h-100  rounded-0 bg-transparent" name=""
+          id="TextAreaDescription" rows="3" placeholder="Description"></textarea>
+      </div>
+      <!-- onclick="readLink()" -->
+      <button type="submit" class="btn btn-success w-100">Save</button>
+
+    </div>
+
+  </form>
+
+  <h1 class="text-center py-3 text-light">LINKS</h1>
+
+  <section class="d-none" id="outputContainer">
+
+    <div class="bg-secondary w-25 rounded-3 p-3">
+      <div class="d-flex">
+        <span class="fs-5 text-light" id="SiteNameOutput">Site Name</span>
+        <button class="btn text-light" onclick="editLink()"><i class="fa-solid fa-pen"></i></button>
+        <button class="btn text-light" onclick="deleteLink()"><i class="fa-solid fa-trash"></i></button>
+      </div>
+      <div>
+        <p class="text-light" id="DescriptionOutput">Site Description</p>
+      </div>
+      <div>
+        <a href="" target="_blank" class="text-light text-decoration-none fs-5" id="LinkURLOutput">Link</a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- <button onclick="alert('Wornning Message')">click Me</button> -->
+  <div class="myToast" id="myTostId">
+    <h4 id="toastMessage"></h4>
+  </div>
+
+  <script src="./js/all.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+  <!-- -------------- -->
+
+
+</body>
+
+</html>

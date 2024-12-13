@@ -1,0 +1,33 @@
+input::placeholder, textarea::placeholder {
+    color: rgba(226, 219, 219, 0.932) !important;
+}
+textarea{
+    color: rgba(255, 255, 255) !important;
+}
+/* input[type="text"]{
+    padding-inline: 45px;
+} */
+
+
+
+
+.myToast{
+    background-color: rgba(255, 251, 0, 0.993); 
+    padding: 10px;
+    width: 300px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: absolute;
+    right: -1000px;
+    top: 20px;
+    transition: 2s ease-in-out all;
+}
+
+.adjecent-right{
+    transition: 2s ease-in-out all;
+    right: 10px;
+}
+
+
+
